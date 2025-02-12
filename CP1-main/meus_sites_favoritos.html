@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da Página -->
+    <title>CP1-Sites-Favoritos</title>
+    <!-- Estilos CSS -->
+    <style>
+        /* Estilo para o corpo da página */
+        body {
+            margin: 0; /* Remove margens padrão */
+            background-color: rgb(27, 24, 24); /* Define a cor de fundo */
+            background-image: url('./img/fundo_sites_favoritos.jpg'); /* Define a imagem de fundo */
+            background-size: cover; /* Cobrir toda a tela sem distorcer a imagem */
+            background-position: center; /* Posição central da imagem */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte do texto */
+            font-size: 20px; /* Define o tamanho padrão do texto */
+            color: #bd1919; /* Cor padrão do texto */
+        }
+
+        /* Estilo para o contêiner principal */
+        .container {
+            max-width: 100%; /* Define a largura máxima do contêiner */
+            margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+            font-size: 20px;
+            padding: 20px; /* Adiciona preenchimento interno */
+            display: flex; /* Usa layout flexível */
+            flex-direction: column; /* Coloca os elementos em coluna */
+            align-items: center; /* Centraliza horizontalmente */
+        }
+
+        /* Estilo para o texto na seção de imagens */
+        .text_sites_favoritos {
+            color: #bd1919; /* Cor do texto */
+            text-align: center; /* Centraliza o texto */
+            margin-bottom: 20px; /* Espaçamento inferior */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte do texto */
+            font-size: 30px; /* Define o tamanho do texto */
+            letter-spacing: 2px; /* Define o espaçamento entre as letras */
+            text-shadow: 2px 2px 4px rgba(25, 21, 243, 0.5); /* Adiciona sombra ao texto */
+        }
+
+        /* Estilo para o texto ao lado da imagem */
+        .texto-ao-lado {
+            margin-left: 10px; /* Adiciona um espaço à esquerda */
+        }
+
+        /* Estilo para a seção de imagens */
+        .imagens_sites_favoritos {
+            display: grid; /* Usa o layout de grade */
+            grid-template-columns: repeat(2, 1fr); /* Duas colunas com largura igual */
+            grid-gap: 10px; /* Espaçamento entre as células da grade */
+            width: 50%; /* Largura da seção de imagens */
+        }
+
+        /* Estilo para as imagens */
+        .imagens_sites_favoritos img {
+            max-width: 100%; /* Define a largura máxima das imagens */
+            height: auto; /* Altura automática para manter a proporção */
+            display: block; /* Exibe as imagens como blocos */
+        }
+
+        /* Estilo para o botão de ir para outra página */
+        .go-to-page {
+            position: fixed; /* Posição fixa em relação à janela do navegador */
+            bottom: 20px; /* Distância do fundo da janela */
+            left: 20px; /* Distância da esquerda da janela */
+            background-color: #bd1919; /* Cor de fundo do botão */
+            color: white; /* Cor do texto */
+            padding: 10px 15px; /* Preenchimento interno do botão */
+            border: none; /* Remove a borda do botão */
+            border-radius: 5px; /* Adiciona cantos arredondados ao botão */
+            font-size: 16px; /* Tamanho da fonte do botão */
+            cursor: pointer; /* Altera o cursor para o ponteiro ao passar por cima */
+            transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+            z-index: 1000; /* Define a ordem de empilhamento */
+        }
+
+        /* Estilo do botão ao passar o mouse */
+        .go-to-page:hover {
+            background-color: #aa1515; /* Cor de fundo alterada ao passar o mouse */
+        }
+
+        @media only screen and (max-width: 360px) {
+            /* Ajustes para telas menores */
+            body {
+                height: auto; /* Altura automática para acomodar o conteúdo */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Contêiner principal -->
+    <div class="container">
+        <!-- Texto descritivo -->
+        <div class="text_sites_favoritos">
+            <h1>MEUS SITES FAVORITOS</h1>
+        </div>
+        <!-- Seção de imagens favoritas -->
+        <div class="imagens_sites_favoritos">
+            <!-- Insira as imagens aqui -->
+            <div>
+                <a href="https://www.netflix.com/br/">
+                    <img src="./img/site_netflix.jpg" alt="Imagem demonstrativa da netflix">
+                </a>
+                    <span class="texto-ao-lado">Netflix</span>
+            </div>
+
+            <div>
+                <a href="https://www.instagram.com/">
+                    <img src="./img/site_instagram.jpg" alt="Imagem demonstrativa do instagram">
+                </a>
+                    <span class="texto-ao-lado">Instagram</span>
+            </div>
+            
+            <div>
+                <a href="https://www.youtube.com/">
+                    <img src="./img/site_youtube.jpg" alt="Imagem demonstrativa do youtube">
+                </a>
+                    <span class="texto-ao-lado">YouTube</span>
+            </div>
+
+            <div>
+                <a href="https://animefire.plus/">
+                    <img src="./img/site_anime.jpg" alt="Imagem demonstrativa de anime">
+                </a>
+                    <span class="texto-ao-lado">AnimeFire</span>
+            </div>
+
+            <div>
+                <a href="https://www.playstation.com/pt-br/">
+                    <img src="./img/site_playstation.jpg" alt="Imagem demonstrativa da playstation">
+                </a>    
+                    <span class="texto-ao-lado">PlayStation</span>
+            </div>
+
+            <div>
+                <a href="https://www.microsoft.com/pt-br">
+                    <img src="./img/site_microsoft.jpg" alt="Imagem demonstrativa da microsoft">
+                </a>
+                    <span class="texto-ao-lado">Microsoft</span>
+            </div>
+
+            <div>
+                <a href="https://ayamartesmarciais.com.br/?gad_source=1&gclid=CjwKCAjw7-SvBhB6EiwAwYdCAWvEtqnnUQLDkrgqkb7Pj4lZreXv0wep1GSs_1MjWMD6BH80a6qJohoCBrUQAvD_BwE">
+                    <img src="./img/site_muay_thai.jpg" alt="Imagem demonstrativa do site_muay_thai">
+                </a>
+                    <span class="texto-ao-lado">Muay Thai</span>
+            </div>
+
+            <div>
+                <a href="https://www.pichau.com.br/">
+                    <img src="./img/site_pichau.jpg" alt="Imagem demonstrativa da pichau">
+                </a>
+                    <span class="texto-ao-lado">Pichau</span>
+            </div>
+
+            <div>
+                <a href="https://www.burgerking.com.br/">
+                    <img src="./img/site_burger_king.jpg" alt="Imagem demonstrativa do burger king">
+                </a>
+                    <span class="texto-ao-lado">Burger King</span>    
+            </div>
+
+            <div>
+                <a href="https://open.spotify.com/intl-pt">
+                    <img src="./img/site_spotify.jpg" alt="Imagem demonstrativa do spotify">
+                </a> 
+                    <span class="texto-ao-lado">Spotify</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão para ir para outra página -->
+    <button onclick="goToPage()" class="go-to-page">Home</button>
+
+    <!-- Script para redirecionar para outra página -->
+    <script>
+        function goToPage() {
+            // Altere "outra_pagina.html" para o URL da página para onde deseja ir
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
+

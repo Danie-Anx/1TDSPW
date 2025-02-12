@@ -1,0 +1,108 @@
+/* Estilo para o elemento h1 */
+html {
+    font-size: 16px;
+}
+
+header {
+    font-size: 65.5%; /* Supondo que seja para estilizar o elemento header */
+}
+
+.container {
+    padding: 20px;
+
+    p {
+        color:green; 
+
+    }
+}
+
+.rodape {
+    border-top: 2px solid red;
+    margin-top: 15px;
+}
+
+h1 {
+    color: rgb(245, 8, 8);
+    font-size: 5em;
+    text-align: center;
+    font-family: serif;
+}
+
+h2 {
+    font-family: serif;
+}
+
+/* seletor de classes */
+.link {
+    display: inline-block;
+    margin: 0 5% 0 5%;
+    border: solid 2px red;
+    background-color: rgba(255, 0, 0, 0.2); /* Corrigido o formato da cor */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in;
+
+    /* Nesting elementos */
+    /* Nesting pseudo-elementos */
+    &:hover {
+        background-color: red;
+    }
+
+    a {
+        text-decoration: none;
+        color: red;
+
+        /*  Nesting elementos */
+        img {
+            display: inline-block;
+            width: 50%;
+        }
+    }
+}
+
+/* seletor de id */
+#menu ul {
+    text-align: center;
+   
+    a {
+        font-style: italic;
+    }
+}
+
+#contact {
+    form {
+        border: solid 1px rgb(112, 107, 107);
+        padding: 10px;
+
+        button {
+            background-color: blue;
+            color: white;
+        }
+    }
+}
+
+#links-sites{
+    font-style: italic;
+}
+
+#links-entre-paginas {
+    a {
+        font-style: italic;
+    }
+}
+
+
+#cabecalho {
+    font-size: 62.5%;
+
+    /* Exemplo de background-image */
+    background-image: url('../img/Introducao-css3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: blue;
+}
+
+#conteudo {
+    line-height: 1.5;
+}
+

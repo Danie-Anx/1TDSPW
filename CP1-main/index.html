@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags para definição do charset e viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>CP1</title>
+    <!-- Estilos CSS internos -->
+    <style>
+        /* Estilos para o corpo da página e pseudo-elemento para a imagem de fundo */
+        body {
+            margin: 0; /* Remove margens padrão */
+            font-family: Arial, sans-serif; /* Define a fonte */
+            background-color: #333; /* Cor de fundo do corpo */
+            color: #fff; /* Cor do texto */
+            padding: 0; /* Remove preenchimento padrão */
+            overflow-x: hidden; /* Evita rolagem horizontal */
+            position: relative; /* Adicionado */
+        }
+        /* Pseudo-elemento para a imagem de fundo */
+        body::after {
+            content: ""; /* Adiciona um conteúdo ao pseudo-elemento */
+            background-image: url('./img/fiap.png'); /* Define a imagem de fundo */
+            background-size: cover; /* Cobrir toda a tela */
+            background-position: center; /* Posição central da imagem */
+            background-repeat: no-repeat; /* Evita repetição da imagem */
+            opacity: 0.7; /* Opacidade da imagem */
+            position: fixed; /* Posicionamento fixo para cobrir a tela */
+            top: 0; /* Distância do topo */
+            left: 0; /* Distância da esquerda */
+            bottom: 0; /* Distância do fundo */
+            right: 0; /* Distância da direita */
+            z-index: -1; /* Coloca o pseudo-elemento abaixo do conteúdo */
+        }
+        /* Estilos para o contêiner principal */
+        .container {
+            max-width: 90%; /* Por exemplo, 50% da largura da página */
+            margin: 0 auto; /* Centraliza horizontalmente */
+            padding: 20px 40px; /* Adiciona preenchimento (topo, direita, inferior, esquerda) */
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 10px;
+            align-items: flex-start;
+            overflow: hidden;
+            height: auto; /* Define a altura automaticamente com base no conteúdo */
+            position: relative; /* Adicionado */
+        }
+
+        /* Estilos para as imagens */
+        .image {
+            width: 200px; /* Ajustado para ocupar 100% da largura do contêiner */
+            max-width: 100%; /* Largura máxima relativa ao contêiner pai */
+            height: auto; /* Ajustado para manter a proporção da imagem */
+            margin-top: 10px; /* Distância do topo */
+        }
+
+        /* Estilos para a imagem no canto direito */
+        .image-right {
+            width: 350px; /* Ajustado para ocupar 100% da largura do contêiner */
+            max-width: 100%;; /* Defina a largura máxima desejada para a imagem */
+            position: absolute; /* Posicionamento absoluto */
+            top: 550px; /* Distância do topo */
+            right: 120px; /* Alinhamento à direita */
+            z-index: 999; /* Valor alto para trazer a imagem para frente */ 
+        }
+
+        .texto_acima_imagem {
+            position:absolute ;
+            top: 495px;
+            right: 180px;
+            text-align: center; /* Centraliza horizontalmente o título */
+            text-shadow: 2px 2px 4px rgba(38, 67, 230, 0.7); /* Sombra do texto */
+        }
+        
+
+        .descricao{
+            max-width: 70%;
+        }
+
+
+        /* Estilos para o texto */
+        .text {
+            color: #fff; /* Cor do texto */
+            font-size: 22px; /* Tamanho da fonte */
+            line-height: 1.5; /* Altura da linha */
+            overflow: hidden; /* Evita overflow */
+            clear: both; /* Limpa float */
+            position: relative; /* Adicionado */
+            z-index: 1; /* Garante que o texto esteja acima da imagem de fundo */
+        }
+
+        /* Estilos para os links dentro do texto */
+        .text a {
+            color: #eeeb53; /* Cor dos links */
+            font-weight: bold; /* Peso da fonte */
+            text-decoration: none; /* Remove decoração do link */
+        }
+
+        /* Efeito de hover nos links */
+        .text a:hover {
+            color: #ffffff; /* Cor do link ao passar o mouse */
+        }
+
+        /* Efeito de link ativo */
+        .text a:active {
+            color: #e47878; /* Cor do link ativo */
+        }
+
+        /* Media query para telas menores */
+/* Media query para telas menores */
+@media only screen and (max-width: 980px) {
+    /* Ajustes adicionais para telas menores */
+    .image-right {
+        width: auto; /* Define a largura automaticamente */
+        max-width: 50%; /* Largura máxima relativa à largura do contêiner pai */
+        position: relative; /* Alterado para posição relativa para manter o fluxo do documento */
+        top: auto; /* Remove o deslocamento vertical */
+        right: auto; /* Remove o deslocamento horizontal */
+        margin-top: 20px; /* Adiciona margem superior para espaçamento */
+        margin-left: auto; /* Alinha a imagem automaticamente ao centro */
+        margin-right: auto; /* Alinha a imagem automaticamente ao centro */
+        display: block; /* Força a imagem a ser exibida como bloco */
+        text-align: center; /* Centraliza horizontalmente dentro do contêiner pai */
+    }
+
+    .texto_acima_imagem{
+        width: auto; /* Define a largura automaticamente */
+        position: relative; /* Alterado para posição relativa para manter o fluxo do documento */
+        top: auto; /* Remove o deslocamento vertical */
+        right: auto; /* Remove o deslocamento horizontal */
+        margin-top: 20px; /* Adiciona margem superior para espaçamento */
+        margin-left: auto; /* Alinha a imagem automaticamente ao centro */
+        margin-right: auto; /* Alinha a imagem automaticamente ao centro */
+        display: block; /* Força a imagem a ser exibida como bloco */
+        text-align: center; /* Centraliza horizontalmente dentro do contêiner pai */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Conteúdo da página -->
+    <div class="container">
+        <!-- Texto principal -->
+        <div class="text">
+            <h1 style="color: #bd1919;">FIAP. O NOVO É AQUI!</h1>
+
+            <img src="./img/logan.png" alt="FIAP" class="image">
+
+            <p class="descricao">A FIAP é o centro de excelência em tecnologia mais respeitado do país. Uma história que vem sendo construída dia 
+                após dia, estimulando mentes a vivenciarem a inovação e o empreendedorismo. 
+                Porque a FIAP acredita no poder transformador da tecnologia. Um poder que, aliado à criatividade, 
+                inventa, muda, inquieta. Faz as pessoas buscarem soluções que nunca foram pensadas. 
+                Tudo isso para construir um mundo melhor.</p>
+
+            <h2 style="color: #bd1919;">CONHEÇA OS CURSOS</h2>
+            
+            <!-- Lista de cursos -->
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li><a href="./cursos/adm.html">Administração</a></li>
+                <li><a href="./cursos/analise_desenvolvimento_sistemas.html">Análise e Desenvolvimento de Software</a></li>
+                <li><a href="./cursos/banco_de_dados.html">Banco de Dados</a></li>
+                <li><a href="./cursos/engenharia_de_computacao.html">Engenharia da Computação</a></li>
+                <li><a href="./cursos/engenharia_de_producao.html">Engenharia da Produção</a></li>
+                <li><a href="./cursos/engenharia_mecatronica.html">Engenharia Mecatrônica</a></li>
+                <li><a href="./cursos/gestao_de_tecnologia_da_informacao.html">Gestão de Tecnologia da Informação</a></li>
+                <li><a href="./cursos/jogos_digitais.html">Jogos Digitais</a></li>
+                <li><a href="./cursos/sistemas_de_informacao.html">Sistemas de Informação</a></li>
+                <li><a href="./cursos/sistemas_para_internet.html">Sistemas para Internet</a></li>
+                <li><a href="./cursos/rede_de_computadores.html">Rede de Computadores</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Fim do conteúdo -->
+
+    <div class="texto_acima_imagem">
+        <h2 style="color: #bd1919;"> Meus sites favoritos </h2>
+    </div>
+        
+
+        <!-- Imagem dos sites favoritos no canto direito -->
+        <a href="meus_sites_favoritos.html">
+            <img src="./img/sitesFavoritos.jpg" alt="Sites Favoritos" class="image-right">
+        </a>
+
+</body>
+</html>

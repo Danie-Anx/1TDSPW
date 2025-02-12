@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page | SmartCheck</title>
+    <link rel="stylesheet" href="./css/style.css">
+     <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+            <div class="container">
+                <img class="titulo" src="./img/smart.png" alt="Logo da empresa SmartConnect Car">
+                <ul class="navbar">
+                    <li>
+                        <a href="./index.html">Inicial</a>
+                    </li>
+                    <li>
+                        <a href="./about.html"> Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="#footer-container">Contato</a>
+                    </li>
+                    <li class="agora">
+                        <a href="./login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+    <div class="container-pagina">
+        <div class="container-login">
+            <div class="mensagem">Bem-vindo de volta</div>
+            <form id="loginForm">
+                <div class="grupo-form">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="grupo-form">
+                  <label for="password">Senha:</label>
+                  <input type="password" id="password" placeholder="Senha" required>
+                </div>
+                <button type="submit">Entrar</button>
+              </form>
+              <p id="erroLogin" class="mensagem-erro"></p>
+              <p id="sucessoLogin" class="mensagem-sucesso"></p>
+        </div>
+    </div>
+    <footer>
+        <div id="footer-container">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: heitor.ortega16@gmail.com</p>
+                <p>Telefone: (11) 94743-1188</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <a href="https://www.facebook.com">Facebook</a><br>
+                <a href="https://www.twitter.com">Twitter</a><br>
+                <a href="https://www.instagram.com">Instagram</a><br>
+            </div>
+            <div class="footer-section">
+                <h3>Endereço</h3>
+                <p>Av. Paulista, 1106</p>
+                <p>Bela Vista, São Paulo</p>
+                <p>CEP: 01311-000</p>
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>

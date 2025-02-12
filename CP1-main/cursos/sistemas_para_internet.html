@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP1</title>
+    <style>
+        /* Documentei o código*/
+
+        /* Estilos CSS internos */ 
+
+        /* Pseudo-elemento para a imagem de fundo */
+        body::after {
+            content: ""; /* conteúdo vazio */
+            background-image: url('../img/fundoCursos.png'); /* substitua 'caminho/para/sua/imagem.jpg' pelo caminho da sua imagem */
+            background-size: cover; /* ajusta o tamanho da imagem para cobrir todo o corpo */
+            background-position: center; /* posiciona a imagem ao centro do corpo */
+            background-repeat: no-repeat; /* não repete a imagem */
+            opacity: 0.6; /* torna a imagem de fundo 70% transparente */
+            position: fixed; /* posiciona o elemento de forma absoluta */
+            top: 0; /* alinha o topo do elemento ao topo do corpo */
+            left: 0; /* alinha a esquerda do elemento à esquerda do corpo */
+            bottom: 0; /* alinha a parte inferior do elemento à parte inferior do corpo */
+            right: 0; /* alinha a direita do elemento à direita do corpo */
+            z-index: -1; /* coloca o elemento por trás de todos os outros conteúdos */
+        }
+
+        /* Defina a margem do corpo como zero */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            padding: 0;
+        }
+
+        /* Estilizando o container */
+        .container {
+            max-width: 90%; /* largura máxima do container */
+            margin: 0 auto; /* centraliza horizontalmente */
+            padding: 20px; /* espaço interno */
+            display: grid; /* usando display grid para layout */
+            grid-template-columns: auto auto; /* duas colunas */
+            grid-column-gap: 10px; /* espaçamento entre colunas */
+            align-items: flex-start; /* alinha os itens verticalmente ao topo */
+            overflow: hidden; /* para conter a imagem flutuante */
+        }   
+
+        /* Estilizando a imagem */
+        .image {
+            max-width: 100%; /* largura máxima da imagem */
+            height: auto; /* altura automática para manter a proporção */
+            display: block; /* exibe a imagem como um bloco */
+            margin: 0 auto;
+            margin-bottom: 20px; /* margem inferior */
+            width: 450px; /* Utilizando largura relativa */
+            float: left;
+        }
+
+        .descricao{
+            max-width: 80%;
+        }
+
+       .text {
+            color: #fff; /* cor do texto */
+            font-size: 20px; /* tamanho da fonte */
+            line-height: 1.5; /* altura da linha */
+            padding-left: 10px; /* adiciona um pouco de preenchimento à esquerda */
+            text-align: justify; /* alinha o texto justificado */
+        }
+
+        /* Estilizando os links */
+        .text a {
+            color: #eeeb53; /* cor padrão dos links */
+            font-weight: bold; /* negrito */
+            text-decoration: none; /* removendo sublinhado padrão */
+        }
+
+        /* Efeito de hover nos links */
+        .text a:hover {
+            color: #ffffff; /* mudando a cor ao passar o mouse */
+        }
+
+        /* Efeito de link ativo */
+        .text a:active {
+            color: #e47878; /* mudando a cor quando clicado */
+        }
+
+         /* Estilizando a lista de links */
+         .text ul {
+            list-style-type: none; /* removendo marcadores de lista */
+            padding: 0; /* removendo preenchimento */
+        }
+
+        /* Estilizando os itens da lista de links */
+        .text li {
+            display: inline-block; /* exibir os itens em linha */
+        }
+
+        /* Limpar a flutuação para garantir que o próximo elemento comece abaixo */
+        h2 {
+            clear: both;
+        }
+
+        /* Media query para telas menores */
+        @media only screen and (max-width: 400px) {
+            .container {
+                grid-template-columns: 1fr; /* Uma coluna para telas menores */
+                padding: 10px; /* Ajusta o padding para telas menores */
+            }
+
+            .image {
+                margin: 0 auto 20px; /* Centraliza a imagem e adiciona margem inferior */
+            }
+
+            .text {
+                font-size: 16px; /* Reduz o tamanho da fonte para telas menores */
+            }
+
+            .descricao {
+            max-width: 90%;
+        }
+
+    }
+
+    </style>
+</head>
+<body>
+
+    <!-- Início do conteúdo -->
+    <div class="container">
+        <!-- Texto -->
+        <div class="text">
+            <h1 style="color: #bd1919;"> SISTEMA PARA INTERNET </h1>
+            <img src="../img/curso_sistema_para_internet.jpg" alt="FIAP" class="image">
+            
+            <h2 style="color: #bd1919;"> O CURSO </h2>
+
+            <p class="descricao">
+                <strong style="color: #bd1919;"> SISTEMA PARA INTERNET </strong> 
+                Pensar de uma forma digital não é mais uma tendência: é uma estratégia de inovação e de geração de negócios. O 
+                acesso à Internet banda larga aumentou 55% em 2015, totalizando 133,7 milhões de acessos, segundo a Telebrasil. 
+                Números que ampliam a importância de um tecnólogo não só voltado para a Internet, mas que também domine as 
+                novas tecnologias e metodologias que estão surgindo.
+                Neste cenário, a palavra de ordem é: Transformação Digital. Ou ampliar a interação entre cliente e empresa, 
+                repensando modelos de negócio com foco na experiência e na continuidade da relação humana, promovendo assim a 
+                integração entre os meios físico e digital. 
+                Tecnologia em Sistemas para Internet prepara você para criar experiências omnichannel e desenvolver plataformas 
+                tecnológicas que apoiem o processo de transformação digital do mercado. 
+                Este é um curso que possibilita a imersão completa em todo o ecossistema digital: desde a criação, manutenção, 
+                segurança e gerenciamento de sites, portais e aplicativos mobile até o desenvolvimento de projetos de Marketing 
+                Digital e CyberSecurity. 
+                No primeiro ano, você já aprende a criar um e-commerce e a atuar como um Web Designer, utilizando os conceitos de 
+                UX e Design Thinking. Também vai saber como programar Back-end em Java para acessar uma base de dados Oracle 
+                ou MySQL. Já no segundo ano, o foco é no desenvolvimento de sistemas de portais corporativos, portais colaborativos 
+                e apps mobile para as plataformas Android e iOS. 
+            </p>
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li><a href="./sistemas_de_informacao.html">Curso Anterior</a> | </li>
+                <li><a href="../index.html">Página Principal</a> | </li>
+                <li><a href="./rede_de_computadores.html">Próximo Curso</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Fim do conteúdo -->
+
+</body>
+</html>

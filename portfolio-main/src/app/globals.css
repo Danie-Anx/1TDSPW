@@ -1,0 +1,99 @@
+:root {
+  --background: linear-gradient(135deg, #ffffff, #a7a0a0); /* Gradiente de fundo, mas coloquei uma imagem, então nem vai precisar */
+  --foreground: #1f2937; /* Cor do texto */
+  --primary-color: #b91c1c; /* Cor primária */
+  --accent-color: #ff5a5f; /* Cor de destaque adicional */
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos globais para html e body */
+html, body {
+  margin: 0; 
+  padding: 0; 
+  height: 100%; 
+  overflow-x: hidden; /* Remove barras de rolagem horizontal */
+  background: var(--background); /* Aplica o fundo gradiente */
+  color: var(--foreground); /* Aplica a cor do texto */
+}
+
+body {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column; 
+  background: url('/img/imagem-fundo.jpeg') no-repeat center center fixed;
+  background-size: cover; 
+}
+
+
+/* Estilo para o rodapé */
+footer {
+  margin-top: auto;
+}
+
+/* Estilo para o título "Disciplinas" */
+h2.disciplinas-titulo {
+  color: rgb(250, 250, 250);
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  opacity: 0; /* Inicialmente invisível */
+  animation: fadeIn 0.5s forwards; /* Animação de fade-in */
+}
+
+h2.disciplinas-titulo:hover {
+  color: var(--accent-color);
+  border-color: var(--primary-color);
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Tornar visível */
+  }
+}
+
+/* Estilo para os itens da lista de disciplinas */
+ul li {
+  color: white; /* Define a cor do texto da lista */
+  margin: 0.5rem 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+  color: var(--primary-color); /* Muda a cor ao passar o mouse */
+  transform: translateX(5px); /* Efeito de movimento ao passar o mouse */
+}
+
+/* Estilo para os cartões de alunos */
+.card-aluno {
+  background-color: #ffffff; /* Cor de fundo do cartão */
+  padding: 1.5rem; 
+  border-radius: 0.5rem; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Transições suaves */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra do cartão */
+  border: 2px solid transparent;
+}
+
+.card-aluno:hover {
+  transform: translateY(-5px); /* Move o cartão ligeiramente para cima */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+  border-color: var(--accent-color); /* Muda a cor da borda ao passar o mouse */
+}
+
+/* Definindo padding global */
+.container {
+  padding: 1rem; /* Padding em todos os lados */
+}
+
+* {
+  box-sizing: border-box; /* Faz com que padding e border não aumentem o tamanho do elemento */
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP1</title>
+    <style>
+        /* Documentei o código*/
+
+        /* Estilos CSS internos */ 
+
+        /* Pseudo-elemento para a imagem de fundo */
+        body::after {
+            content: ""; /* conteúdo vazio */
+            background-image: url('../img/fundoCursos.png'); /* substitua 'caminho/para/sua/imagem.jpg' pelo caminho da sua imagem */
+            background-size: cover; /* ajusta o tamanho da imagem para cobrir todo o corpo */
+            background-position: center; /* posiciona a imagem ao centro do corpo */
+            background-repeat: no-repeat; /* não repete a imagem */
+            opacity: 0.6; /* torna a imagem de fundo 70% transparente */
+            position: fixed; /* posiciona o elemento de forma absoluta */
+            top: 0; /* alinha o topo do elemento ao topo do corpo */
+            left: 0; /* alinha a esquerda do elemento à esquerda do corpo */
+            bottom: 0; /* alinha a parte inferior do elemento à parte inferior do corpo */
+            right: 0; /* alinha a direita do elemento à direita do corpo */
+            z-index: -1; /* coloca o elemento por trás de todos os outros conteúdos */
+        }
+
+        /* Defina a margem do corpo como zero */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            padding: 0;
+        }
+
+        /* Estilizando o container */
+        .container {
+            max-width: 90%; /* largura máxima do container */
+            margin: 0 auto; /* centraliza horizontalmente */
+            padding: 20px; /* espaço interno */
+            display: grid; /* usando display grid para layout */
+            grid-template-columns: auto auto; /* duas colunas */
+            grid-column-gap: 10px; /* espaçamento entre colunas */
+            align-items: flex-start; /* alinha os itens verticalmente ao topo */
+            overflow: hidden; /* para conter a imagem flutuante */
+        } 
+
+        /* Estilizando a imagem */
+        .image {
+            max-width: 100%; /* largura máxima da imagem */
+            height: auto; /* altura automática para manter a proporção */
+            display: block; /* exibe a imagem como um bloco */
+            width: 500px; /* largura fixa da imagem */
+            float: left; /* move a imagem para a esquerda */
+            margin-bottom: 20px; /* margem inferior */
+        }
+
+        .descricao{
+            max-width: 70%;
+        }
+
+       .text {
+            color: #fff; /* cor do texto */
+            font-size: 20px; /* tamanho da fonte */
+            line-height: 1.5; /* altura da linha */
+            padding-left: 10px; /* adiciona um pouco de preenchimento à esquerda */
+            text-align: justify; /* alinha o texto justificado */
+        }
+
+        /* Estilizando os links */
+        .text a {
+            color: #eeeb53; /* cor padrão dos links */
+            font-weight: bold; /* negrito */
+            text-decoration: none; /* removendo sublinhado padrão */
+        }
+
+        /* Efeito de hover nos links */
+        .text a:hover {
+            color: #ffffff; /* mudando a cor ao passar o mouse */
+        }
+
+        /* Efeito de link ativo */
+        .text a:active {
+            color: #e47878; /* mudando a cor quando clicado */
+        }
+
+         /* Estilizando a lista de links */
+         .text ul {
+            list-style-type: none; /* removendo marcadores de lista */
+            padding: 0; /* removendo preenchimento */
+        }
+
+        /* Estilizando os itens da lista de links */
+        .text li {
+            display: inline-block; /* exibir os itens em linha */
+        }
+
+        /* Limpar a flutuação para garantir que o próximo elemento comece abaixo */
+        h2 {
+            clear: both;
+        }
+
+         /* Media query para telas menores */
+         @media only screen and (max-width: 400px) {
+            .container {
+                grid-template-columns: 1fr; /* Uma coluna para telas menores */
+                padding: 10px; /* Ajusta o padding para telas menores */
+            }
+
+            .image {
+                margin: 0 auto 20px; /* Centraliza a imagem e adiciona margem inferior */
+            }
+
+            .text {
+                font-size: 16px; /* Reduz o tamanho da fonte para telas menores */
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Início do conteúdo -->
+    <div class="container">
+        <!-- Texto -->
+        <div class="text">
+            <h1 style="color: #bd1919;"> SISTEMA DE INFORMAÇÃO </h1>
+            <img src="../img/curso_sistema_informacao.jpg" alt="FIAP" class="image">
+            
+            <h2 style="color: #bd1919;"> O CURSO </h2>
+
+            <p class="descricao">
+                <strong style="color: #bd1919;"> SISTEMA DE INFORMAÇÃO </strong> 
+                apresenta a graduação BACHAREL EM SISTEMAS DE INFORMAÇÃO que recebe uma visão ampla das organizações e seus modelos de negócio e 
+                de como a tecnologia pode amplificar sua estratégia. 
+                Com conteúdo que vai de hardware a inteligência artificial, passando por gestão empresarial, o curso abrange 
+                conhecimentos de desenvolvimento de aplicativos (mobile, games e web), engenharia de software e governança de TI, 
+                banco de dados, redes, business intelligence, análise de sistemas orientados a objetos, gestão de SI, gerência de 
+                projetos e segurança da informação. 
+                A grade foi desenvolvida para que, desde o primeiro ano, os alunos recebam a base necessária para atuarem na área 
+                de TI de grandes empresas, resolvendo problemas por meio de raciocínio lógico e buscando solução para os desafios 
+                das organizações.
+            </p>
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li><a href="./jogos_digitais.html">Curso Anterior</a> | </li>
+                <li><a href="../index.html">Página Principal</a> | </li>
+                <li><a href="./sistemas_para_internet.html">Próximo Curso</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Fim do conteúdo -->
+
+</body>
+</html>
