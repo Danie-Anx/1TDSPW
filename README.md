@@ -4,19 +4,19 @@ Bem-vindo ao meu repositório! Aqui estão organizados todos os projetos desenvo
 📂 Estrutura do Repositório
 Este repositório contém diversas pastas, cada uma correspondente a um projeto ou atividade específica. Abaixo estão algumas delas:
 
-CP1-main – Projeto da CheckPoint 1.
-Challenge-2024-main – Desafio acadêmico de 2024.
-Conclusao-main – Trabalho de conclusão de módulo.
-Inteligencia-Artificial-GS-2 – Projeto de Inteligência Artificial aplicado na Global Solution 2.
-Python – Projetos desenvolvidos em Python durante a faculdade.
-SPRINT-2-main/Site – Desenvolvimento de um site durante a Sprint 2.
-SPRINT-4---JAVA-main – Atividade prática em Java da Sprint 4.
-SmartCar-main/SmartConnectCar – Sistema automotivo com funcionalidades inteligentes.
-exemplo-flex-main – Projeto de exemplo utilizando Flexbox.
-front – Projetos relacionados ao desenvolvimento front-end.
-portfolio-main – Meu portfólio pessoal.
-projeto-base-prototipo-figma-main – Protótipo desenvolvido no Figma para um projeto acadêmico.
-site-institucional-main – Desenvolvimento de um site institucional.
+🔘 CP1-main – Projeto da CheckPoint 1.
+🔘 Challenge-2024-main – Desafio acadêmico de 2024.
+🔘 Conclusao-main – Trabalho de conclusão de módulo.
+🔘 Inteligencia-Artificial-GS-2 – Projeto de Inteligência Artificial aplicado na Global Solution 2.
+🔘 Python – Projetos desenvolvidos em Python durante a faculdade.
+🔘 SPRINT-2-main/Site – Desenvolvimento de um site durante a Sprint 2.
+🔘 SPRINT-4---JAVA-main – Atividade prática em Java da Sprint 4.
+🔘 SmartCar-main/SmartConnectCar – Sistema automotivo com funcionalidades inteligentes.
+🔘 exemplo-flex-main – Projeto de exemplo utilizando Flexbox.
+🔘 front – Projetos relacionados ao desenvolvimento front-end.
+🔘 portfolio-main – Meu portfólio pessoal.
+🔘 projeto-base-prototipo-figma-main – Protótipo desenvolvido no Figma para um projeto acadêmico.
+🔘 site-institucional-main – Desenvolvimento de um site institucional.
 
 🛠️ Tecnologias Utilizadas
 Durante a construção desses projetos, utilizei diversas tecnologias e linguagens, incluindo:
