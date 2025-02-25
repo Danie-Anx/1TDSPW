@@ -1,0 +1,418 @@
+{
+	"info": {
+		"_postman_id": "795c720c-2356-415f-9f3d-a65e58ed56ab",
+		"name": "EnergyX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13645312"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Estimativas Consumo",
+					"item": [
+						{
+							"name": "EstimativasConsumo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{JAVA_BASE_URL}}/usuarios/:idusuario/estimativas-consumo",
+									"host": [
+										"{{JAVA_BASE_URL}}"
+									],
+									"path": [
+										"usuarios",
+										":idusuario",
+										"estimativas-consumo"
+									],
+									"variable": [
+										{
+											"key": "idusuario",
+											"value": "6"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EstimativaConsumo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"consumoMedio\": 123.0,\r\n    \"frequenciaUsoMedio\": \"diario\",\r\n    \"idTipoDispositivo\": 1,\r\n    \"usoMedio\": 10.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{JAVA_BASE_URL}}/usuarios/:idusuario/estimativas-consumo",
+									"host": [
+										"{{JAVA_BASE_URL}}"
+									],
+									"path": [
+										"usuarios",
+										":idusuario",
+										"estimativas-consumo"
+									],
+									"variable": [
+										{
+											"key": "idusuario",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EstimativaConsumo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{JAVA_BASE_URL}}/usuarios/:idusuario/estimativas-consumo/:idestimativaconsumo",
+									"host": [
+										"{{JAVA_BASE_URL}}"
+									],
+									"path": [
+										"usuarios",
+										":idusuario",
+										"estimativas-consumo",
+										":idestimativaconsumo"
+									],
+									"variable": [
+										{
+											"key": "idusuario",
+											"value": "1"
+										},
+										{
+											"key": "idestimativaconsumo",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EstimativaConsumo",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"consumoMedio\": 123.0,\r\n    \"frequenciaUsoMedio\": \"diario\",\r\n    \"idTipoDispositivo\": 2,\r\n    \"usoMedio\": 10.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{JAVA_BASE_URL}}/usuarios/:idusuario/estimativas-consumo/:idestimativaconsumo",
+									"host": [
+										"{{JAVA_BASE_URL}}"
+									],
+									"path": [
+										"usuarios",
+										":idusuario",
+										"estimativas-consumo",
+										":idestimativaconsumo"
+									],
+									"variable": [
+										{
+											"key": "idusuario",
+											"value": "1"
+										},
+										{
+											"key": "idestimativaconsumo",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EstimativaConsumo",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{JAVA_BASE_URL}}/usuarios/:idusuario/estimativas-consumo/:idestimativaconsumo",
+									"host": [
+										"{{JAVA_BASE_URL}}"
+									],
+									"path": [
+										"usuarios",
+										":idusuario",
+										"estimativas-consumo",
+										":idestimativaconsumo"
+									],
+									"variable": [
+										{
+											"key": "idusuario",
+											"value": "1"
+										},
+										{
+											"key": "idestimativaconsumo",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Sugestoes Economia",
+					"item": [
+						{
+							"name": "SugestoesEconomia",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{JAVA_BASE_URL}}/usuarios/:idusuario/sugestoes-economia",
+									"host": [
+										"{{JAVA_BASE_URL}}"
+									],
+									"path": [
+										"usuarios",
+										":idusuario",
+										"sugestoes-economia"
+									],
+									"variable": [
+										{
+											"key": "idusuario",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Processar SugestoesEconomia",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{JAVA_BASE_URL}}/usuarios/:idusuario/sugestoes-economia/processar",
+									"host": [
+										"{{JAVA_BASE_URL}}"
+									],
+									"path": [
+										"usuarios",
+										":idusuario",
+										"sugestoes-economia",
+										"processar"
+									],
+									"variable": [
+										{
+											"key": "idusuario",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"rm557908@fiap.com.br\",\r\n    \"senha\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{JAVA_BASE_URL}}/login",
+							"host": [
+								"{{JAVA_BASE_URL}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"rm557908@fiap.com.br\",\r\n    \"senha\": \"1234\",\r\n    \"nome\": \"Leonardo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{JAVA_BASE_URL}}/usuarios",
+							"host": [
+								"{{JAVA_BASE_URL}}"
+							],
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{JAVA_BASE_URL}}/usuarios/:idusuario",
+							"host": [
+								"{{JAVA_BASE_URL}}"
+							],
+							"path": [
+								"usuarios",
+								":idusuario"
+							],
+							"variable": [
+								{
+									"key": "idusuario",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"rm557908@fiap.com.br\",\r\n    \"senha\": \"1234\",\r\n    \"nome\": \"Leonardo Ribas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{JAVA_BASE_URL}}/usuarios/:idusuario",
+							"host": [
+								"{{JAVA_BASE_URL}}"
+							],
+							"path": [
+								"usuarios",
+								":idusuario"
+							],
+							"variable": [
+								{
+									"key": "idusuario",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tipos Dispositivo",
+			"item": [
+				{
+					"name": "TiposDispositivo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{JAVA_BASE_URL}}/tipos-dispositivo",
+							"host": [
+								"{{JAVA_BASE_URL}}"
+							],
+							"path": [
+								"tipos-dispositivo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoDispositivo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{JAVA_BASE_URL}}/tipos-dispositivo/:idtipodispositivo",
+							"host": [
+								"{{JAVA_BASE_URL}}"
+							],
+							"path": [
+								"tipos-dispositivo",
+								":idtipodispositivo"
+							],
+							"variable": [
+								{
+									"key": "idtipodispositivo",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "JAVA_BASE_URL",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

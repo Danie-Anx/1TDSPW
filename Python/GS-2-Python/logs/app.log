@@ -1,0 +1,107 @@
+2024-11-21 18:22:07,128 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 18:22:19,011 - INFO - Opção escolhida: Sair
+2024-11-21 18:22:21,431 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 18:22:21,961 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 18:22:24,562 - INFO - Opção escolhida: Inserir Usuário
+2024-11-21 18:22:33,902 - INFO - Usuário 'Robert' inserido com sucesso.
+2024-11-21 18:22:50,346 - INFO - Opção escolhida: Inserir Dispositivo
+2024-11-21 18:22:58,369 - INFO - Dispositivo 'Computador' inserido com sucesso.
+2024-11-21 18:23:21,627 - INFO - Opção escolhida: Consultar Usuários
+2024-11-21 18:23:21,638 - INFO - 2 usuário(s) consultado(s).
+2024-11-21 18:23:28,483 - INFO - Opção escolhida: Consultar Estimativas de Consumo
+2024-11-21 18:23:28,497 - INFO - Nenhuma estimativa encontrada na consulta.
+2024-11-21 18:23:49,890 - INFO - Opção escolhida: Atualizar Usuário
+2024-11-21 18:24:08,476 - INFO - Usuário com ID 1 atualizado com sucesso.
+2024-11-21 18:24:19,194 - INFO - Opção escolhida: Atualizar Dispositivo
+2024-11-21 18:24:29,478 - INFO - Dispositivo com ID 1 atualizado com sucesso.
+2024-11-21 18:24:53,947 - INFO - Opção escolhida: Atualizar Dispositivo
+2024-11-21 18:25:00,525 - INFO - Dispositivo com ID 2 atualizado com sucesso.
+2024-11-21 18:25:14,139 - INFO - Opção escolhida: Excluir Dispositivo
+2024-11-21 18:25:16,841 - INFO - Dispositivo com ID 2 excluído com sucesso.
+2024-11-21 18:26:05,866 - INFO - Opção escolhida: Inserir Sugestão de Economia
+2024-11-21 18:26:16,480 - INFO - Sugestão de economia inserida com sucesso para o usuário com ID 1.
+2024-11-21 18:26:32,266 - INFO - Opção escolhida: Consultar Sugestões de Economia
+2024-11-21 18:26:32,287 - INFO - 1 sugestão(ões) de economia consultada(s).
+2024-11-21 18:26:39,107 - INFO - Opção escolhida: Atualizar Sugestão de Economia
+2024-11-21 18:26:53,061 - INFO - Sugestão com ID 1 atualizada com sucesso.
+2024-11-21 18:27:09,043 - INFO - Opção escolhida: Excluir Sugestão de Economia
+2024-11-21 18:27:10,272 - INFO - Sugestão com ID 1 excluída com sucesso.
+2024-11-21 18:27:32,858 - INFO - Opção escolhida: Exportar Estimativas para CSV
+2024-11-21 18:27:32,872 - INFO - Dados exportados para CSV.
+2024-11-21 18:27:44,819 - INFO - Opção escolhida: Sair
+2024-11-21 18:34:46,822 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 18:34:53,755 - INFO - Opção escolhida: Inserir Usuário
+2024-11-21 18:34:57,562 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 18:35:02,261 - INFO - Opção escolhida: Inserir Estimativa de Consumo
+2024-11-21 18:35:25,603 - WARNING - IDs inválidos fornecidos.
+2024-11-21 18:35:34,109 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 18:35:35,611 - INFO - Opção escolhida: Inserir Usuário
+2024-11-21 18:35:55,343 - INFO - Usuário 'Gustavo Silva' inserido com sucesso.
+2024-11-21 18:36:02,467 - INFO - Opção escolhida: Inserir Dispositivo
+2024-11-21 18:36:16,327 - INFO - Dispositivo 'Celular' inserido com sucesso.
+2024-11-21 18:36:24,307 - INFO - Opção escolhida: Inserir Usuário
+2024-11-21 18:36:29,420 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 18:36:30,930 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 18:36:35,579 - INFO - Opção escolhida: Inserir Estimativa de Consumo
+2024-11-21 18:36:48,802 - ERROR - Erro ao inserir estimativa de consumo: ORA-02291: integrity constraint (RM555881.SYS_C004193011) violated - parent key not found
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+2024-11-21 18:40:20,321 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 18:40:22,547 - INFO - Opção escolhida: Inserir Estimativa de Consumo
+2024-11-21 18:40:36,359 - INFO - Estimativa de consumo inserida para o dispositivo 3 e usuário 1.
+2024-11-21 18:40:54,236 - INFO - Opção escolhida: Consultar Estimativas de Consumo
+2024-11-21 18:40:54,250 - INFO - 1 estimativa(s) consultada(s).
+2024-11-21 18:41:06,196 - INFO - Opção escolhida: Inserir Dispositivo
+2024-11-21 18:41:14,498 - INFO - Dispositivo '1' inserido com sucesso.
+2024-11-21 18:42:03,636 - INFO - Opção escolhida: Atualizar Dispositivo
+2024-11-21 18:42:22,282 - INFO - Dispositivo com ID 4 atualizado com sucesso.
+2024-11-21 18:50:55,739 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 18:53:28,775 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 18:54:22,389 - INFO - Opção escolhida: Exportar Estimativas para JSON
+2024-11-21 18:54:22,400 - INFO - Dados exportados para JSON.
+2024-11-21 18:54:35,988 - INFO - Opção escolhida: Sair
+2024-11-21 18:56:15,695 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 18:56:34,886 - INFO - Opção escolhida: Consultar Dispositivos
+2024-11-21 18:56:34,902 - INFO - 2 dispositivo(s) consultado(s).
+2024-11-21 18:57:11,394 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 18:57:17,717 - INFO - Opção escolhida: Exportar Estimativas para CSV
+2024-11-21 18:57:17,722 - INFO - Dados exportados para CSV.
+2024-11-21 18:57:21,565 - INFO - Opção escolhida: Sair
+2024-11-21 19:08:24,220 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 19:08:27,149 - INFO - Opção escolhida: Inserir Usuário
+2024-11-21 19:08:38,335 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 19:08:43,214 - INFO - Opção escolhida: Inserir Usuário
+2024-11-21 19:08:57,670 - INFO - Usuário 'Miguel' inserido com sucesso.
+2024-11-21 19:09:23,093 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 19:09:24,638 - INFO - Opção escolhida: Inserir Usuário
+2024-11-21 19:09:33,742 - WARNING - Email inválido fornecido.
+2024-11-21 19:09:42,046 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 19:09:43,557 - INFO - Opção escolhida: Inserir Usuário
+2024-11-21 19:09:56,106 - INFO - Usuário 'jorge' inserido com sucesso.
+2024-11-21 19:17:29,345 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 19:17:33,550 - INFO - Opção escolhida: Inserir Usuário
+2024-11-21 19:18:04,768 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 20:07:48,813 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 20:08:05,760 - INFO - Opção escolhida: Sair
+2024-11-21 23:31:14,864 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 23:31:23,761 - INFO - Opção escolhida: Sair
+2024-11-21 23:35:00,120 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 23:35:07,128 - INFO - Opção escolhida: Inserir Dispositivo
+2024-11-21 23:35:19,097 - INFO - Dispositivo 'Computador' inserido com sucesso.
+2024-11-21 23:35:36,999 - INFO - Opção escolhida: Inserir Estimativa de Consumo
+2024-11-21 23:35:54,751 - WARNING - ID do dispositivo 1 não existe.
+2024-11-21 23:36:46,871 - INFO - Opção escolhida: Inserir Estimativa de Consumo
+2024-11-21 23:36:56,303 - WARNING - Campos obrigatórios não preenchidos ao tentar inserir estimativa.
+2024-11-21 23:37:00,767 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 23:37:02,262 - INFO - Opção escolhida: Inserir Estimativa de Consumo
+2024-11-21 23:37:08,955 - WARNING - ID do dispositivo 2 não existe.
+2024-11-21 23:37:14,256 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 23:37:16,351 - INFO - Opção escolhida: Inserir Dispositivo
+2024-11-21 23:37:21,526 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 23:37:22,710 - INFO - Opção escolhida: Inserir Estimativa de Consumo
+2024-11-21 23:37:29,680 - INFO - Estimativa de consumo inserida para o dispositivo 5 e usuário 1.
+2024-11-21 23:39:41,208 - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2024-11-21 23:40:05,079 - INFO - Opção escolhida: Inserir Estimativa de Consumo
+2024-11-21 23:40:19,550 - INFO - Estimativa de consumo inserida para o dispositivo 5 e usuário 1.
+2024-11-21 23:41:22,615 - INFO - Opção escolhida: Exportar Estimativas para JSON
+2024-11-21 23:41:22,624 - INFO - Dados exportados para JSON.
+2024-11-21 23:41:25,327 - INFO - Opção escolhida: Sair
